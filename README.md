@@ -1,1 +1,1 @@
-# news-JS
+# CSS-selectors game
