@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+html {
+  font-size: 8px;
+}
+
+pre {
+  margin: 0;
+}
+
+body {
+  background: #2e2a23;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 150px;
+  grid-template-rows: 200px 1fr;
+  gap: 10px 15px;
+  padding-bottom: 5px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main {
+    grid-template-columns: 1fr 100px;
+  }
+}
+
+@keyframes animationStart {
+  0% {
+    transform: skew(0deg, 0deg) scaleY(1);
+  }
+  40% {
+    transform: skew(0deg, 0deg) scaleY(0.85);
+  }
+  100% {
+    transform: skew(4deg, 0deg) scaleX(1);
+  }
+}
+
+@keyframes animation {
+  0% {
+    transform: skew(4deg, 0deg) scaleX(1);
+  }
+  15% {
+    transform: skew(1deg, 0deg) scaleY(0.85);
+  }
+  50% {
+    transform: skew(-4deg, 0deg) scaleX(1);
+  }
+
+  65% {
+    transform: skew(-1deg, 0deg) scaleY(0.85);
+  }
+  100% {
+    transform: skew(4deg, 0deg) scaleX(1);
+  }
+}

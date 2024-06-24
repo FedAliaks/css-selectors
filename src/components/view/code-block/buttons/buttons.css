@@ -1,0 +1,14 @@
+.button {
+  font-size: 2rem;
+  background: rgba(62, 203, 255, 0.3);
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+.level__button {
+  color: white;
+  border: 2px solid rgba(62, 203, 255, 0.3);
+  display: block;
+  margin: 10px auto;
+}

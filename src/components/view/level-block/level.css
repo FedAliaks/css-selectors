@@ -1,0 +1,53 @@
+.level-block {
+  background-color: #2e2a23;
+  border: 2px solid black;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.level {
+  font-size: 2rem;
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.level_completed {
+  color: lightgreen;
+}
+
+.level_current {
+  color: white;
+}
+
+.level_future {
+  color: lightcoral;
+}
+
+.level_current:before {
+  display: inline-block;
+  content: '';
+  background-image: url('../../../assets/icon-birds-current.svg');
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+.level_completed:before {
+  display: inline-block;
+  content: '';
+  background-image: url('../../../assets/icon-birds-completed.svg');
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}
+
+.level_future:before {
+  display: inline-block;
+  content: '';
+  background-image: url('../../../assets/icon-birds-future.svg');
+  width: 25px;
+  height: 25px;
+  vertical-align: bottom;
+}

@@ -1,0 +1,114 @@
+.code {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-around;
+}
+
+.code__field {
+  width: 48%;
+}
+
+.code__title-block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.code__title {
+  font-size: 2rem;
+  padding: 10px 0 5px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.css-code-block {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  border: 2px solid black;
+  margin: 5px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.input-block {
+  background: #ddd;
+}
+
+.line-number-block {
+  background: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.line-number-block_dark {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.line-number {
+  padding: 5px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@keyframes animationBackground {
+  50% {
+    background: rgba(62, 203, 255, 0.3);
+  }
+}
+
+.markup-block {
+  font-size: 1.6rem;
+}
+
+.html-line-code {
+  font-size: 2rem;
+  padding-top: 10px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.shake {
+  animation: animationShake 0.1s infinite;
+  position: relative;
+}
+
+@keyframes animationShake {
+  33% {
+    left: -3px;
+  }
+
+  66% {
+    left: 3px;
+  }
+}
+
+.animationAfterWin {
+  animation: animationWin 0.5s;
+}
+
+@keyframes animationWin {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -500px;
+  }
+}
+
+.markup__wrapper {
+  padding: 5px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 2rem;
+}
+
+.markup__wrapper div {
+  padding-left: 15px;
+}
+
+.markup__wrapper div div {
+  padding-left: 25px;
+  padding-bottom: 0;
+}
+
+.html-line-code_colored {
+  color: red;
+  cursor: pointer;
+}
